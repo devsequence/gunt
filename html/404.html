@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+	@@include('./includes/_head.html')
+</head>
+<body>
+<!--page-wrapper-->
+<div class="page-wrapper">
+	@@include('./includes/_header.html')
+	<!--page-content-->
+	<div class="page-content">
+		<section class="top-section custom-top">
+			<div class="container">
+				<div class="top-section__header">
+					<div class="top-logo">
+						<img src="../static/images/general/logo-text.svg" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+        <section class="not-found">
+            <div class="container">
+                <div class="not-found__media"></div>
+                <div class="not-found__title">
+                    Hoppla!
+                    Etwas war falsch!
+                </div>
+                <div class="not-found__link">
+                    <a href="index.html">
+                        <svg class="icon">
+                            <use xlink:href="#ic-right-long"></use>
+                        </svg>
+                        <span>back to home</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+	</div>
+	<!--page-content-->
+	@@include('./includes/_footer.html')
+</div>
+<!--end-page-wrapper-->
+<div class="hidden">
+    @@include('./includes/symbol/icons.html')
+</div>
+@@include('./includes/_scripts.html')
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+	@@include('./includes/_head.html')
+</head>
+<body>
+<!--page-wrapper-->
+<div class="page-wrapper">
+	@@include('./includes/_header.html')
+	<!--page-content-->
+	<div class="page-content">
+		<section class="top-section contact-top">
+			<div class="container">
+				<div class="top-section__header">
+					<div class="top-logo">
+						<img src="../static/images/general/logo-text.svg" alt="">
+					</div>
+					<div class="title-section">
+						Kontakt
+					</div>
+				</div>
+                <div class="top-subtitle">Reden wir über das Geschäft</div>
+                <div class="contact-form">
+                    <form>
+                        <label class="select-label">
+                            <select name="contactForm[select]">
+                                <option selected>Projekttyp</option>
+                                <option value="typ1">Projekttyp</option>
+                                <option value="typ2">Projekttyp</option>
+                                <option value="typ3">Projekttyp</option>
+                            </select>
+                        </label>
+                        <label class="input-label">
+                            <input class="input" type="text" name="contactForm[name]" placeholder="Ihr Name*" required>
+                        </label>
+                        <label class="input-label">
+                            <input class="input" type="text" name="contactForm[firma]" placeholder="Firma">
+                        </label>
+                        <label class="input-label">
+                            <input class="input" type="email" name="contactForm[EMail]" placeholder="E-Mail Adresse*">
+                        </label>
+                        <label class="input-label">
+                            <input class="input" type="tel" name="contactForm[telefon]" placeholder="Dein Telefon*">
+                        </label>
+                        <label class="label">
+                            <input class="input" type="text" name="contactForm[IhremProjekt]" placeholder="Erzählen Sie uns von Ihrem Projekt*">
+                        </label>
+                        <div class="file-upload">
+                            <div class="file-upload__link">
+								<div class="file-upload__title">
+								    Dateien anhängen
+								</div>
+                                <div class="file-upload__count">
+                                    <span>0</span>
+                                     of 5
+                                </div>
+                                <label class="label-file">
+                                    <input type="file" name="contactForm[file]" id="files" multiple="">
+                                </label>
+                            </div>
+                            <div class="image-upload__image" id="Filelist"></div>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <svg class="icon">
+                                <use xlink:href="#ic-right-long"></use>
+                            </svg>
+                            <span>Anfrage senden</span>
+                        </button>
+                    </form>
+                </div>
+			</div>
+		</section>
+        <section class="contact-wrapper">
+            <div class="container">
+                <div class="contact-wrap">
+                    <div class="contact-item">
+                        <div class="contact-title">In Kontakt kommen</div>
+                        <a href="mailto:info@gunt.company" class="mail-link"  target="_blank">info@gunt.company</a>
+                        <a href="viber://chat?number=%2B380970389263" class="viber-btn">
+                            <svg class="icon">
+                                <use xlink:href="#ic-viber"></use>
+                            </svg>
+                        </a>
+                        <a href="tel:+380970389263" class="phone-link" target="_blank">
+                            +38 097 038 9263
+                            <sub>(Whatsap)</sub>
+                        </a>
+                        <div class="contact-text">
+                            Öffnungszeiten: <br>
+                            Montag - Freitag <br>
+                            9:00 bis 16:00 Uhr <br>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-title">adresse</div>
+                        <a href="#" class="contact-location">Deutschland, Hamburg</a>
+                        <div class="contact-text">
+                            Gunt GmbH <br>
+                            Bramfelder Strasse 58 <br>
+                            C- 22402 Hamburg <br>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-title">Social media</div>
+                        <a href="#" target="_blank">Tiktok</a>
+                        <a href="#" target="_blank">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="map-wrap">
+                <iframe src="https://maps.google.com/maps?hl=de&amp;q=G.U.N.T.%20Ger%C3%A4tebau%20GmbH+(G.U.N.T.%20Ger%C3%A4tebau%20GmbH)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+        </section>
+	</div>
+	<!--page-content-->
+	@@include('./includes/_footer.html')
+</div>
+<!--end-page-wrapper-->
+<div class="hidden">
+    @@include('./includes/symbol/icons.html')
+</div>
+@@include('./includes/_scripts.html')
+<script  type="text/javascript" src="../static/js/upload.js"></script>
+</body>
+</html>

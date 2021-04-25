@@ -1,0 +1,139 @@
+.service-wrapper{
+  padding: 70px 0 0;
+ .service-wrap{
+   display: flex;
+   flex-wrap: wrap;
+ }
+ .service-item{
+   background: $white;
+   border: 1px solid #e5e5e5;
+   border-right: 0;
+   width: 33.333%;
+   min-height: 630px;
+   padding: 40px 42px 10px;
+   &:nth-last-child(-n+3) {
+     border-top: 0;
+   }
+   &:nth-child(3n+3) {
+     border-right: 1px solid #e5e5e5;
+   }
+   &:hover{
+     border-color: transparent !important;
+   }
+ }
+}
+.service-page-top{
+  &:after{
+    max-height: 850px;
+  }
+  .top-wrap{
+    display: flex;
+    flex-direction: column;
+  }
+  .top-title{
+    font-family: $akrobatExtraBold;
+    font-size: 65px;
+    line-height: 65px;
+    text-transform: uppercase;
+    color: $default;
+    margin-bottom: 30px;
+  }
+  .top-wrap{
+    margin-bottom: 110px;
+  }
+  .service-inner{
+    display: flex;
+  }
+  .service-inner__list{
+    width: 100%;
+    max-width: 500px;
+    ul{}
+    li{
+      font-family: $akrobatExtraBold;
+      font-size: 35px;
+      line-height: 50px;
+      color: $default;
+      margin-bottom: 20px;
+      padding-left: 36px;
+      position: relative;
+      &:before{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 18px;
+        width: 6px;
+        height: 2px;
+        background: $default;
+      }
+    }
+  }
+  .service-inner__wrap{
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .service-inner__item{
+    display: flex;
+    margin-bottom: 30px;
+    position: relative;
+    &:before{
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background: #aaaaa9;
+
+    }
+  }
+  .service-inner__title{
+    font-family: $noahHeavy;
+    color: $default;
+    font-size: 35px;
+    line-height: 40px;
+    width: 200px;
+    min-width: 200px;
+    padding:  0 20px;
+  }
+  .service-inner__text{
+    font-family: $noahRegular;
+    font-size: 17px;
+    line-height: 25px;
+    color: $default;
+  }
+}
+.project-service{
+  padding-bottom: 100px;
+}
+.product-wrap{
+  .container{
+    display: flex;
+    align-items: center;
+  }
+  .product-wrap__media{
+    width: 50%;
+    img{
+      position: relative;
+      left: -380px;
+      top: 40px;
+    }
+  }
+  .product-wrap__description{
+    width: 40%;
+    position: relative;
+    z-index: 2;
+    margin: 0 0 0 auto;
+  }
+  .product-wrap__title{
+    font-family: $noahHeavy;
+    font-size: 30px;
+    color: $default;
+    margin-bottom: 30px;
+  }
+  .product-wrap__text{
+    font-family: $noahRegular;
+    font-size: 17px;
+    line-height: 25px;
+    color: $default;
+  }
+}

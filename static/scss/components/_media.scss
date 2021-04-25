@@ -1,0 +1,107 @@
+
+@media screen and (max-width: 1441px){
+  .hero{
+    &-inform{
+      font-size: 38px;
+      line-height: 44px;
+      margin-bottom: 0;
+    }
+    &-item{
+      padding: 40px 30px 40px 40px;
+      &:hover{
+        .hero-item__numb{
+          &:before{
+            left: -40px;
+          }
+        }
+      }
+    }
+    &-logo{
+      margin-bottom: 40px;
+    }
+    &-item__link{
+      margin-top: -37px;
+    }
+  }
+  .about-information {
+    min-height: 90vh;
+    .parallax-block {
+      right: 208px;
+      .parallax-item{
+        &:nth-of-type(1){
+          //left: -95px;
+          top: -25px;
+        }
+        &:nth-of-type(2){
+          left: -103px;
+          top: -25px;
+        }
+        &:nth-of-type(3){
+          top: calc(80vh - 225px);
+          left: -286px;
+        }
+      }
+    }
+  }
+  .service-home {
+    height: 813px;
+    .title-section{
+      position: absolute;
+      top: -30px;
+      left: -5px;
+      letter-spacing: 1px;
+      font-size: 100px;
+      line-height: 100px;
+    }
+    .subtitle-section{
+      margin-bottom: 42px;
+    }
+    .service-list{
+      li{
+        margin-bottom: 24px;
+      }
+    }
+    .service-item{
+      &:first-of-type{
+        padding: 36px;
+      }
+    }
+  }
+  .service-item{
+    padding: 36px 47px 39px;
+  }
+  .project-home {
+    .title-wrap {
+      .title-section{
+        position: relative;
+        left: -23px;
+        top: 10px;
+        line-height: 110px;
+      }
+    }
+  }
+  .footer {
+    .parallax-block{
+      left: 0;
+      top: -30px;
+    }
+  }
+}
+@media screen and (max-width: 1025px){
+  .header-fixed {
+    width: 60px;
+  }
+  .header-logo {
+    img {
+      width: 61px;
+      height: 67px;
+    }
+  }
+  .header-btn{
+    top: 7px;
+  }
+  .hero-wrap{
+    width: calc(100% - 60px);
+    margin-left: 60px;
+  }
+}

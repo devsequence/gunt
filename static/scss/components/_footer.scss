@@ -1,0 +1,142 @@
+.footer{
+  position: relative;
+  background: $default;
+  padding: 200px 0 150px;
+  a{
+    font-size: 20px;
+    font-family: $noahRegular;
+    font-weight: 400;
+    color: $white;
+    &:hover{
+      color: $primary;
+    }
+  }
+  .parallax-block{
+    position: absolute;
+    z-index: 2;
+    left: 185px;
+    top: -20px;
+    overflow: hidden;
+    height: 150px;
+    width: 380px;
+    display: flex;
+  }
+  .parallax-item{
+    position: absolute;
+    left: 0;
+    &:first-of-type{}
+    &:last-of-type{
+      left: 100px;
+    }
+  }
+  .contact-link{
+    text-align: right;
+    a{
+      margin: 0 0 0 auto;
+      border: 1px solid $primary;
+      color: $primary;
+      padding: 16px 70px;
+      display: inline-flex;
+      align-items: center;
+      &:hover{
+        color: $white;
+        .icon{
+          fill: $white;
+        }
+      }
+    }
+    span{
+      font-size: 16px;
+      text-transform: uppercase;
+      font-family: $akrobatBold;
+      font-weight: 700;
+    }
+    .icon{
+      fill: $primary;
+      width: 20px;
+      margin-right: 20px;
+    }
+  }
+}
+.footer-logo{
+  a{
+    width: 150px;
+    margin-bottom: 10px;
+  }
+  img{
+    width: 150px;
+  }
+}
+.footer-logo__text{
+  font-size: 18px;
+  color: #eeeeef;
+}
+.footer-top, .footer-center, .footer-bottom{
+  display: flex;
+  align-items: flex-start;
+}
+.footer-item{
+  width: 50%;
+}
+.footer-top{
+  margin-bottom: 55px;
+}
+.footer-center{
+  margin-bottom: 70px;
+  .mail-link{
+    display: block;
+    font-size: 20px;
+    font-family: $noahRegular;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  .phone-link{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 25px;
+    font-family: $noahHeavy;
+    font-weight: 900;
+  }
+  .viber-btn{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    .icon{
+      width: 30px;
+      height: 30px;
+      fill: $white;
+    }
+    &:hover{
+      .icon{
+        fill: $primary;
+      }
+    }
+  }
+  ul{
+    display: flex;
+  }
+  li{
+    margin-right: 50px;
+    &:last-of-type{
+      margin-right: 0;
+    }
+  }
+}
+.footer-bottom{
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li{
+    width: 50%;
+    margin-bottom: 10px;
+  }
+}
+.footer-title{
+  font-family: $akrobatExtraBold;
+  font-weight: 900;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #747474;
+  margin-bottom: 28px;
+}
