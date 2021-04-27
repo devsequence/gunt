@@ -202,3 +202,59 @@
     }
   }
 }
+@media screen and (max-width: 1025px) {
+  .contact-wrapper {
+    padding: 100px 0 0;
+    .contact-wrap{
+      flex-wrap: wrap;
+    }
+    .contact-item{
+      width: calc(50% - 30px);
+      margin: 0 15px 30px;
+    }
+    .map-wrap{
+      margin-top: 20px;
+      height: 400px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact-top {
+    .top-section__header{
+      margin-bottom: 40px;
+    }
+    .contact-form{
+      padding-top: 20px;
+    }
+    .input-label{
+      width: calc(100% - 30px);
+      margin: 0 15px 15px;}
+    .file-upload{
+      margin: 15px 15px 20px;
+    }
+    .input,  select{
+      height: 45px;
+    }
+  }
+  .contact-wrapper {
+    padding: 80px 0 0;
+    .contact-item{
+      &:nth-of-type(1){
+        width: 100%;
+        margin: 0 0 30px;
+      }
+      width: 100%;
+      margin: 0 0 20px;
+      a{
+        margin-bottom: 15px;
+      }
+    }
+    .contact-title {
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 18px;
+    }
+  }
+
+
+}

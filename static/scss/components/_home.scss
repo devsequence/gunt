@@ -390,13 +390,24 @@
       max-width: 500px;
     }
   }
+  .project-slider{
+    padding-left: 75px;
+  }
   .swiper-slide{
+    width: 365px;
     height: 540px;
     overflow: hidden;
-    transform: scale(1);
+    //transform: scale(1);
     position: relative;
+    &.swiper-slide-prev{
+      width: 20% !important;
+    }
+    &.swiper-slide-next{
+      width: 20% !important;
+    }
     &.swiper-slide-active{
-      transform: scale(1.5);
+      width: 60% !important;
+      //transform: scale(1.5);
       position: relative;
       z-index: 2;
       .slide-description{
