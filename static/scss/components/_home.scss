@@ -1,3 +1,4 @@
+
 .hero {
   &-wrapper{
     padding: 0;
@@ -270,6 +271,7 @@
     height: 100%;
     width: calc(100% - 75px);
     margin-left: 75px;
+    overflow: hidden;
   }
   .service-item{
     background: #f9f9f7;
