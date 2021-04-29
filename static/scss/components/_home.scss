@@ -1,4 +1,3 @@
-
 .hero {
   &-wrapper{
     padding: 0;
@@ -74,7 +73,7 @@
       opacity: 0;
       visibility: hidden;
       border: 1px solid $primary;
-      padding: 8px 15px 7px;
+      padding: 14px 28px 14px;
       text-transform: uppercase;
       color: $white;
       display: inline-flex;
@@ -500,13 +499,13 @@
   }
 }
 .about-home{
-  padding: 180px 0 80px;
+  padding: 284px 0 80px;
   position: relative;
   &:after{
     position: absolute;
     content: '';
     left: 0;
-    top: 412px;
+    top: 405px;
     width: calc(100% - 75px);
     height: calc(100% - 492px);
     background: #f9f9f7;

@@ -39,6 +39,9 @@
     width: 100%;
     height: 3px;
     background: $default;
+    &.hidden{
+      display: none;
+    }
     &:nth-of-type(1){
       width: 20px;
     }
@@ -48,6 +51,9 @@
     &:nth-of-type(3){
       width: 28px;
     }
+  }
+  .icon{
+    fill: $default;
   }
 }
 .header-social{
@@ -71,17 +77,17 @@
 .header-nav{
   position: fixed;
   top: 0;
-  width: 270px;
+  width: 350px;
   height: 100%;
-  background: $white;
-  padding: 15px;
+  background: $primary;
+  padding: 150px 15px 0 50px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   z-index: 11;
   opacity: 1;
-  left: 0;
+  left: 70px;
   visibility: visible;
   transition: all ease 300ms;
   &.active{
@@ -92,26 +98,90 @@
   }
   ul{}
   li{
-    margin-bottom: 10px;
+    &.has-submenu{
+      a{
+        &:after{
+          width: calc(100% + 25px);
+        }
+      }
+    }
+    &.is-open{
+      a{
+        &:after{
+          opacity: 1;
+        }
+      }
+    }
+    ul{
+      padding-left: 25px;
+      margin-bottom: 15px;
+      display: none;
+      a{
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 18px;
+        font-family: $noahMedium;
+        font-weight: 600;
+        &:after{
+          display: none;
+        }
+        &:hover{
+          color: $white;
+        }
+      }
+    }
+    .icon{
+      fill: $default;
+      width: 15px;
+      height: 10px;
+      margin-left: 10px;
+      cursor: pointer;
+      stroke: $default;
+      position: relative;
+      top: -3px;
+      stroke-width: 1px;
+      &.active{
+        transform: rotate(180deg);
+      }
+    }
   }
   a{
-    font-size: 16px;
+    font-size: 25px;
+    line-height: 25px;
     color: $default;
-    &:hover{
-      color: $primaryHover;
+    font-family: $noahHeavy;
+    font-weight: 900;
+    margin-bottom: 25px;
+    position: relative;
+    &:after{
+      position: absolute;
+      content: '';
+      left: 0;
+      bottom: 0;
+      height: 8px;
+      width: 100%;
+      background: $white;
+      opacity: 0;
+      z-index: -1;
     }
+    &:hover{
+      &:after{
+        opacity: 1;
+      }
+    }
+
   }
 }
 .header-overlay{
   transition: all ease 300ms;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: calc(100% - 70px);
   height: 100%;
   background: rgba($black, .4);
   z-index: 10;
   opacity: 1;
-  left: 0;
+  left: 70px;
   visibility: visible;
   &.active{
     z-index: -10;
@@ -126,7 +196,7 @@
   right: -40px;
   border-radius: 0 5px 5px 0;
   margin-top: -20px;
-  background: $white;
+  background: $primary;
   width: 40px;
   height: 40px;
   display: flex;
@@ -138,7 +208,7 @@
   }
   &:hover{
     .icon{
-      fill: $black;
+      fill: $white;
     }
   }
 }

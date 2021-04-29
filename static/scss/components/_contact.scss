@@ -153,6 +153,12 @@
     }
     .viber-btn{
       display: inline-block;
+      margin-right: 10px;
+      &:hover{
+        .icon{
+          fill: $primary;
+        }
+      }
     }
     .phone-link{
       display: inline-block;
