@@ -2010,6 +2010,8 @@ body.scroll {
     padding: 0 30px 22px; }
   .about-home {
     padding: 137px 0 144px; }
+    .about-home:after {
+      top: 234px; }
     .about-home .container {
       padding-left: 45px;
       margin: 0; }
@@ -2156,12 +2158,16 @@ body.scroll {
     margin-bottom: 11px; }
   .about-home {
     padding: 97px 0 214px; }
+    .about-home:after {
+      top: 195px;
+      width: 100%;
+      height: calc(100% - 320px); }
     .about-home .container {
       padding-left: 40px; }
     .about-home .about-home__description {
       padding: 0 15px 0 30px; }
     .about-home .title-section {
-      left: -5px;
+      left: -35px;
       top: 16px; }
     .about-home .subtitle-section {
       margin: 75px 0px 24px;
