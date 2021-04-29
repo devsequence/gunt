@@ -44,23 +44,22 @@ var projectSlider = new Swiper('.project-slider', {
         prevEl: '.swiper-button-prev',
     },
 });
-
-// function popupOpen() {
-//     const $popupButton = $('.btn-popup, .header-mobile__login a');
-//     $popupButton.on('click', function (e) {
-//         const $this = $(this);
-//         const popupButtonData = $this.data('popup');
-//         $('.popup').removeClass('active');
-//         $('div[data-popup = '+popupButtonData+']').addClass('active');
-//         if ($this.parents('.header-user__item').length) {}else{
-//             $('.popup-overlay').addClass('active');
-//             $('body').addClass('scroll-h');
-//         }
-//         popupHeight();
-//     });
-// }
-// popupOpen();
-//
+$(document).ready(function() {
+    var movementStrength = 25;
+    var height = movementStrength / $(window).height();
+    var width = movementStrength / $(window).width();
+    $(".about-information, .hero-wrapper, .service-home").mousemove(function(e){
+        var pageX = e.pageX - ($(window).width() / 2);
+        var pageY = e.pageY - ($(window).height() / 2);
+        var newvalueX = width * pageX * +1 + 1;
+        var newvalueY = height * pageY * +2 + 300;
+        var styles = {
+            top : newvalueX+"px",
+            right: newvalueY+"px"
+        };
+        $('.about-information .parallax-block').css(styles);
+    });
+});
 
 
 
