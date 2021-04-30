@@ -15,6 +15,7 @@ body {
   padding: 100px 0 100px;
   h1{
     margin-bottom: 100px;
+    text-transform: uppercase;
   }
   h2{
     margin-bottom: 50px;
@@ -22,10 +23,44 @@ body {
   p{
     margin-bottom: 25px;
   }
+  ul{}
+  li{
+    font-family: $noahRegular;
+    font-weight: 400;
+    color: $default;
+    font-size: 17px;
+    line-height: 35px;
+    padding-left: 20px;
+    position: relative;
+    &:before{
+      position: absolute;
+      content: '';
+      width: 8px;
+      height: 3px;
+      left: 0;
+      top: 50%;
+      margin-top: -2px;
+      background: $black;
+    }
+  }
+  ol{
+    padding-left: 20px;
+    li{
+      padding-left: 0;
+      &::marker{
+        font-family: $noahHeavy;
+        font-weight: 900;
+      }
+      &:before{
+        display: none;
+      }
+    }
+  }
 }
 h3, h4, h5, h6{
-  font-family: $noahBold;
+  font-family: $noahHeavy;
   margin-bottom: 25px;
+  font-weight: 900;
 }
 h1 {
   font-family: $akrobatExtraBold;
@@ -33,7 +68,23 @@ h1 {
   line-height: 50px;
   color: $default;
 }
-
+strong{
+  font-family: $noahHeavy;
+  font-weight: 900;
+}
+blockquote{
+  position: relative;
+  padding-left: 50px;
+  &:before{
+    position: absolute;
+    content: '';
+    left: 25px;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: #dedede;
+  }
+}
 h2 {
   font-family: $akrobatExtraBold;
   font-size: 40px;
@@ -76,7 +127,6 @@ img {
   font-size: 12px;
   line-height: 14px;
 }
-
 section {
   position: relative;
   padding: 40px 0;
