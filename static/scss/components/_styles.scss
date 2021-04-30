@@ -353,6 +353,8 @@ body.scroll{
   min-height: 100vh;
   text-align: center;
   background: $default;
+  margin-left: 15px;
+  padding: 23px 0;
   .container{
     display: flex;
     flex-direction: column;
@@ -360,8 +362,8 @@ body.scroll{
     align-items: center;
   }
   &__media{
-    max-width: 630px;
-    margin: 0 auto 40px;
+    max-width: 663px;
+    margin: 0 auto 20px;
     img{
       width: 100%;
     }
@@ -369,9 +371,9 @@ body.scroll{
   &__title{
     font-family: $akrobatExtraBold;
     font-weight: 900;
-    margin-bottom: 40px;
-    font-size: 30px;
-    text-transform: uppercase;
+    margin-bottom: 49px;
+    font-size: 40px;
+    line-height: 49px;
     color: $white;
   }
   &__link{
@@ -379,7 +381,7 @@ body.scroll{
       margin: 0 0 0 auto;
       border: 1px solid $primary;
       color: $primary;
-      padding: 8px 30px;
+      padding: 15px 37px;
       display: inline-flex;
       align-items: center;
       &:hover{
@@ -398,7 +400,7 @@ body.scroll{
     .icon{
       fill: $primary;
       width: 20px;
-      margin-right: 20px;
+      margin-right: 48px;
     }
   }
 }

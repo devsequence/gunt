@@ -456,29 +456,31 @@ body.scroll {
 .not-found {
   min-height: 100vh;
   text-align: center;
-  background: #383838; }
+  background: #383838;
+  margin-left: 15px;
+  padding: 23px 0; }
   .not-found .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
   .not-found__media {
-    max-width: 630px;
-    margin: 0 auto 40px; }
+    max-width: 663px;
+    margin: 0 auto 20px; }
     .not-found__media img {
       width: 100%; }
   .not-found__title {
     font-family: "Akrobat-ExtraBold";
     font-weight: 900;
-    margin-bottom: 40px;
-    font-size: 30px;
-    text-transform: uppercase;
+    margin-bottom: 49px;
+    font-size: 40px;
+    line-height: 49px;
     color: #ffffff; }
   .not-found__link a {
     margin: 0 0 0 auto;
     border: 1px solid #a1ab76;
     color: #a1ab76;
-    padding: 8px 30px;
+    padding: 15px 37px;
     display: inline-flex;
     align-items: center; }
     .not-found__link a:hover {
@@ -493,7 +495,7 @@ body.scroll {
   .not-found__link .icon {
     fill: #a1ab76;
     width: 20px;
-    margin-right: 20px; }
+    margin-right: 48px; }
 
 .header-fixed {
   z-index: 10;
@@ -588,7 +590,8 @@ body.scroll {
       line-height: 20px;
       margin-bottom: 18px;
       font-family: "Noah-Medium";
-      font-weight: 600; }
+      font-weight: 600;
+      text-transform: none; }
       .header-nav li ul a:after {
         display: none; }
       .header-nav li ul a:hover {
@@ -612,7 +615,8 @@ body.scroll {
     font-family: "Noah-Heavy";
     font-weight: 900;
     margin-bottom: 25px;
-    position: relative; }
+    position: relative;
+    text-transform: uppercase; }
     .header-nav a:after {
       position: absolute;
       content: '';
@@ -1521,8 +1525,8 @@ body.scroll {
     width: 50%; } }
 
 @media screen and (max-width: 992px) {
-  .product-wrap .product-wrap__media {
-    display: none; }
+  .product-wrap .container {
+    flex-direction: column-reverse; }
   .product-wrap .product-wrap__description {
     width: 100%; }
   .service-page-top .top-title {
@@ -1549,6 +1553,10 @@ body.scroll {
       top: 10px; }
   .product-wrap .product-wrap__title {
     font-size: 24px; } }
+
+@media screen and (max-width: 567px) {
+  .product-wrap .product-wrap__media {
+    width: 100%; } }
 
 .contact-top:after {
   height: 85%; }
@@ -1863,7 +1871,6 @@ body.scroll {
     width: calc(100% - 60px);
     margin-left: 60px; }
   .about-top .advantage-wrap {
-    flex-wrap: wrap;
     margin: 0  -15px 0;
     justify-content: center; }
   .about-top .advantage-item {
@@ -1916,7 +1923,8 @@ body.scroll {
     font-size: 26px;
     line-height: 34px; }
   .service-page-top:after {
-    top: 185px; }
+    top: 185px;
+    max-height: calc(100% - 200px); }
   .footer .contact-link a {
     padding: 15px 40px; }
   .footer-title {
@@ -1933,6 +1941,14 @@ body.scroll {
     .banner-wrapper .title-block {
       font-size: 45px;
       line-height: 50px; } }
+
+@media screen and (max-width: 700px) {
+  .about-top .advantage-wrap {
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 0 0; }
+    .about-top .advantage-wrap .advantage-item {
+      width: 100%; } }
 
 @media screen and (max-width: 567px) {
   .container {

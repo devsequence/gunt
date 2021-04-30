@@ -194,9 +194,13 @@
   }
 }
 @media screen and (max-width: 992px) {
+
   .product-wrap {
+    .container{
+      flex-direction: column-reverse;
+    }
     .product-wrap__media{
-      display: none;
+      img{}
     }
     .product-wrap__description{
       width: 100%;
@@ -219,6 +223,7 @@
     }
   }
 }
+
 @media screen and (max-width: 768px){
   .service-page-top {
       .top-title{
@@ -242,5 +247,10 @@
       font-size: 24px;
 
     }
+  }
+}
+@media screen and (max-width: 567px){
+  .product-wrap .product-wrap__media {
+    width: 100%;
   }
 }

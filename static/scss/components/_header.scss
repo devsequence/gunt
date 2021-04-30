@@ -122,6 +122,7 @@
         margin-bottom: 18px;
         font-family: $noahMedium;
         font-weight: 600;
+        text-transform: none;
         &:after{
           display: none;
         }
@@ -153,6 +154,7 @@
     font-weight: 900;
     margin-bottom: 25px;
     position: relative;
+    text-transform: uppercase;
     &:after{
       position: absolute;
       content: '';
